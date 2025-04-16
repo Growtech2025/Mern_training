@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table 1</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            /* border-collapse: collapse; */
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>level 1</th>
+            <th>level 2</th>
+            <th>level 3</th>
+            <th>Info</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td rowspan="6">System</td>
+            <td rowspan="4">System Apps</td>
+            <td rowspan="3">System Env</td>
+            <td>App test</td>
+            <td>Foo</td>
+        </tr>
+        <tr>
+            <td>App Memory</td>
+            <td>foo</td>
+        </tr>
+
+        <tr>
+            <td>App Test</td>
+            <td>bar</td>
+        </tr>
+
+        <tr>
+            <td>System Env2</td>
+            <td>App Test</td>
+            <td>bar</td>
+        </tr>
+
+
+        <tr>
+            <td rowspan="2">System Memory</td>
+            <td rowspan="2"> Memory Test</td>
+            <td> Function</td>
+            <td>Foo</td>
+        </tr>
+        <tr>
+            <td>App Test</td>
+            <td>foo</td>
+        </tr>
+    </table>
+</body>
+
+</html>
