@@ -1,0 +1,10 @@
+p {
+    height: 500px;
+    width: 300px;
+    background-color: rgb(14, 175, 138);
+}
+
+h1 {
+    background-color: #e61111;
+    color: white;
+}
