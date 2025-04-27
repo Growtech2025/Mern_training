@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 2px solid black;
+            text-align: center;
+        }
+        
+        td,
+        th {
+            padding: 4px;
+        }
+        
+        .table2 {
+            border-collapse: collapse;
+        }
+        
+        .table3 {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>Columu 1</td>
+                <td>Columu 2</td>
+                <td>Columu 3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Row 1 Cell 1</td>
+                <td>Row 1 Cell 2</td>
+                <td>Row 1 Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 1 Cell 2</td>
+                <td>Row 1 Cell 3</td>
+            </tr>
+            <tr>
+                <td colspan="3">Row 3 Cell 1</td>
+            </tr>
+        </table>
+
+        <br />
+        <table class="table2">
+            <tr>
+                <th>Day/Period</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>12:00</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <td>Eng</td>
+                <td>Mat</td>
+                <td>Che</td>
+                <th rowspan="6">LUNCH</th>
+                <td colspan="3">Lab</td>
+                <td>phy</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td colspan="3">LAB</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td>Mat</td>
+                <td>SPORTS</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>Mat</td>
+                <td>Phy</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td colspan="3">LIBRARY</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td>Phy</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td colspan="3">LAB</td>
+                <td>Mat</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td colspan="3">LAB</td>
+                <td>Mat</td>
+                <td>Che</td>
+                <td>Eng</td>
+                <td>Phy</td>
+            </tr>
+            <tr>
+                <th>Saturday</th>
+                <td>Eng</td>
+                <td>Che</td>
+                <td>Mat</td>
+                <td colspan="3">SEMINAR</td>
+                <td>SPORTS</td>
+            </tr>
+        </table>
+        <br />
+        <table class="table3">
+            <tr>
+                <td></td>
+                <td>Knocky</td>
+                <td>Flor</td>
+                <td>Ella</td>
+                <td>Juan</td>
+            </tr>
+            <tr>
+                <td>Breed</td>
+                <td>Jack</td>
+                <td>Poodle</td>
+                <td>StreetDog</td>
+                <td>Cooker</td>
+            </tr>
+            <tr>
+                <td>Breed</td>
+                <td>Jack</td>
+                <td>Poodle</td>
+                <td>StreetDog</td>
+                <td>Cooker</td>
+            </tr>
+            <tr>
+                <td>Breed</td>
+                <td>Jack</td>
+                <td>Poodle</td>
+                <td>StreetDog</td>
+                <td>Cooker</td>
+            </tr>
+            <tr>
+                <td>Breed</td>
+                <td>Jack</td>
+                <td>Poodle</td>
+                <td>StreetDog</td>
+                <td>Cooker</td>
+            </tr>
+        </table>
+        <br />
+        <table>
+            <tr>
+                <th>Device</th>
+                <th>Brand</th>
+                <th colspan="2">Specifiaction</th>
+            </tr>
+            <tr>
+                <td rowspan="3">Smartphone</td>
+                <td rowspan="3">Apple</td>
+                <td>Model</td>
+                <td>Storage</td>
+            </tr>
+            <tr>
+                <td>iphone 12 pro</td>
+                <td>256GB</td>
+            </tr>
+            <tr>
+                <td>iPhone SE</td>
+                <td>128GB</td>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td>HP</td>
+                <td colspan="2">15.6 Display</td>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td>HP</td>
+                <td colspan="2">15.6 Display</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

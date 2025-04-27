@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+    <style>
+      input {
+        padding: 10px;
+        margin: 10px;
+      }
+      label {
+        margin-left: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h1>Bank Account Opening From</h1>
+      <div style="display: flex; justify-content: center">
+        <div>
+          <label for="type">Account Type</label>
+          <br />
+          <select
+            style="width: 185px; height: 40px; margin: 10px"
+            name="type"
+            id="typr"
+          >
+            <option value="General">General</option>
+            <option value="Current">Current</option>
+            <option value="Saving">Saving</option>
+          </select>
+        </div>
+        <div>
+          <label for="salary">Monthly Salary</label>
+          <br />
+          <input type="number" name="salary" id="salary" step="1000" />
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center">
+        <div>
+          <label for="name"> Name</label>
+          <br />
+          <input type="text" placeholder="First" id="name" name="name" />
+        </div>
+        <div>
+          <label for="Last"></label>
+          <br />
+          <input type="text" name="last" id="last" placeholder="Last" />
+        </div>
+      </div>
+      <div>
+        <label for="phone">Phone</label> <br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          style="width: 370px"
+          placeholder="### ### ####"
+        />
+      </div>
+
+      <div>
+        <label for="Adress">Address</label> <br />
+        <input
+          type="text"
+          id="Adress"
+          name="Adress"
+          placeholder="Street Adress"
+          style="width: 370px"
+        />
+        <br />
+        <input
+          type="text"
+          id="Adress 2"
+          name="Adress 2"
+          placeholder="Street Adress line 2"
+          style="width: 370px"
+        /><br />
+        <input type="text" name="city" id="city" placeholder="city" />
+        <input
+          type="text"
+          name="Region"
+          id="Region"
+          placeholder="Region"
+        /><br />
+        <input type="text" name="postal" id="postal" placeholder="postal" />
+        <select
+          name="state"
+          id="state"
+          style="width: 185px; height: 40px; margin: 10px"
+        >
+          <option value="mp">M.P.</option>
+          <option value="up">U.P.</option>
+          <option value="rj">R.J.</option>
+        </select>
+      </div>
+      <div>
+        <p style="margin-left: 10px"><b>HOw did You hear About Us?</b></p>
+        <input type="checkbox" name="sms" id="sms" />SMS
+      </div>
+    </div>
+  </body>
+</html>

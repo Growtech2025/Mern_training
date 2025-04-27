@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 2px;
+        text-align: center;
+      }
+
+      .no-border,
+.no-border tr {
+  border: none;
+}
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; gap: 20px;">
+      <table>
+        <tr>
+          <th rowspan="2"></th>
+          <th colspan="2">Average</th>
+          <th rowspan="2">Red eyes</th>
+        </tr>
+        <tr>
+          <th>height</th>
+          <th>weight</th>
+        </tr>
+        <tr>
+          <td>Male</td>
+          <td>1.9</td>
+          <td>0.003</td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <td>Female</td>
+          <td>1.7</td>
+          <td>0.002</td>
+          <td>43%</td>
+        </tr>
+      </table>
+      <table class="no-border">
+        <tr>
+          <th>No.</th>
+          <th>Full Name</th>
+          <th>Position</th>
+          <th>Salary</th>
+          <th>Type</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Bill Gate</td>
+          <td>Founder Microsoft</td>
+          <td>$1000</td>
+          <td rowspan="4">Comapany Founder</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Bill Gate</td>
+          <td>Founder Microsoft</td>
+          <td>$1000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Bill Gate</td>
+          <td>Founder Microsoft</td>
+          <td>$1000</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Bill Gate</td>
+          <td>Founder Microsoft</td>
+          <td>$1000</td>
+        </tr>
+        <tr>
+          <td colspan="3">Total Expense:</td>
+          <td>$4600</td>
+          <td class="no-border"></td>
+
+        </tr>
+      </table>
+  </body>
+</html>

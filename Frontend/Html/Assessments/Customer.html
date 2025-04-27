@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Customer's Profile</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+      }
+      .Group {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Customer's Profile</h2>
+      <form>
+        <div class="form-group">
+          <label>Client ID:</label>
+          <input type="text" value="1002" />
+        </div>
+        <div class="form-group">
+          <label>Account No:</label>
+          <input type="text" value="51-00529-3" />
+        </div>
+        <div class="Group">
+          <div class="form-group">
+            <label>Firstname:</label>
+            <input type="text" value="Manny" />
+          </div>
+          <div class="form-group">
+            <label>Middlename:</label>
+            <input type="text" />
+          </div>
+          <div class="form-group">
+            <label>Lastname:</label>
+            <input type="text" value="Villar" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Address:</label>
+          <input type="text" />
+        </div>
+        <div class="form-group">
+          <label>Birth Date:</label>
+          <input type="date" value="2009-08-30" />
+        </div>
+        <div class="form-group">
+          <label>Age:</label>
+          <input type="text" value="50" />
+        </div>
+        <div class="form-group">
+          <label>Birth Place:</label>
+          <input type="text" />
+        </div>
+        <div class="form-group">
+          <label>Nationality:</label>
+          <input type="text" />
+        </div>
+        <div class="form-group">
+          <label>Gender:</label>
+          <select>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>ACR:</label>
+          <input type="text" />
+        </div>
+        <div class="form-group">
+          <label>TIN:</label>
+          <input type="text" />
+        </div>
+        <div class="form-group">
+          <label>Children:</label>
+          <input type="text" value="0" />
+        </div>
+        <div class="form-group">
+          <label>Civil Status:</label>
+          <select>
+            <option>Single</option>
+            <option selected>Married</option>
+            <option>Divorced</option>
+            <option>Widowed</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Spouse:</label>
+          <input type="text" />
+        </div>
+        <div class="form-group">
+          <label>Referred:</label>
+          <input type="text" />
+        </div>
+        <div class="button-group">
+          <button type="submit">Save</button>
+          <button type="button">Close</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

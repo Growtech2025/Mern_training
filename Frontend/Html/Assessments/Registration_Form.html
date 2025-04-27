@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Registrations.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="contain">
+        <div>
+          <h1 class="heading">
+            Registration
+            <hr />
+          </h1>
+        </div>
+        <div class="form">
+          <div class="form1">
+            <span>
+              <label for="fname">Full Name</label>
+              <input
+                type="text"
+                name="fname"
+                placeholder="Enter your name"
+                id="fname"
+              />
+            </span>
+            <span>
+              <label for="fusername">Username</label>
+              <input
+                type="text"
+                name="fusername"
+                placeholder="Enter your username"
+                id="fusername"
+              />
+            </span>
+          </div>
+          <div class="form1">
+            <span>
+              <label for="femail">Email</label>
+              <input
+                type="email"
+                name="femail"
+                placeholder="Enter your email"
+                id="femail"
+              />
+            </span>
+            <span>
+              <label for="fphone">Phone Number</label>
+              <input
+                type="tel"
+                name="fphone"
+                placeholder="Enter your number"
+                id="fphone"
+              />
+            </span>
+          </div>
+          <div class="form1">
+            <span>
+              <label for="fpassword">Password</label>
+              <input
+                type="password"
+                name="fpassword"
+                placeholder="Enter your password"
+                id="fpassword"
+              />
+            </span>
+            <span>
+              <label for="cpassword">Confirm Password</label>
+              <input
+                type="password"
+                name="cpassword"
+                placeholder="Confirm your password"
+                id="cpassword"
+              />
+            </span>
+          </div>
+          <div class="GenRatio">
+            <label>Gender</label>
+            <div class="gen">
+              <span>
+                <input type="radio" id="fmale" name="gender" value="male" />
+                <label for="fmale">Male</label>
+              </span>
+              <span>
+                <input type="radio" id="ffemale" name="gender" value="female" />
+                <label for="ffemale">Female</label>
+              </span>
+              <span>
+                <input type="radio" id="fother" name="gender" value="other" />
+                <label for="fother">Prefer not to say</label>
+              </span>
+            </div>
+          </div>
+          <div class="register">
+            <input type="submit" value="Register" id="fsubmit" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

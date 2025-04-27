@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <span>
+        <label for="school">First Name</label>
+        <input required type="text" id="school" />
+      </span>
+      &nbsp; &nbsp;
+      <span>
+        <label for="middle">Middle Name</label>
+        <input value="Kumar" type="text" id="middle" />
+      </span>
+      &nbsp; &nbsp;
+      <span>
+        <label for="last">Last Name</label>
+        <input type="text" id="last" />
+      </span>
+      <br />
+      <br />
+      <div>
+        <span>
+          <label for="age">Age</label>
+          <input type="number" id="age" />
+        </span>
+        &nbsp; &nbsp;
+        <span>
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+        </span>
+      </div>
+      <br />
+      <br />
+      <div>
+        <span>
+          <label for="dob">DOB</label>
+          <input type="date" min="1998-01-01" max="2025-04-14" id="dob" />
+        </span>
+      </div>
+
+      <div>
+        <span>
+          <p>Passout Year</p>
+          <span>
+            <input
+              type="radio"
+              name="passout_year"
+              id="year2020"
+              value="2020"
+            />
+            <label for="year2020">2020</label>
+          </span>
+          <span>
+            <input
+              type="radio"
+              name="passout_year"
+              id="year2021"
+              value="2021"
+            />
+            <label for="year2021">2021</label>
+          </span>
+          <span>
+            <input
+              type="radio"
+              name="passout_year"
+              id="year2022"
+              value="2022"
+            />
+            <label for="year2022">2022</label>
+          </span>
+          <span>
+            <input
+              type="radio"
+              name="passout_year"
+              id="year2023"
+              value="2023"
+            />
+            <label for="year2023">2023</label>
+          </span>
+          <span>
+            <input
+              type="radio"
+              name="passout_year"
+              id="year2024"
+              value="2024"
+            />
+            <label for="year2024">2024</label>
+          </span>
+          <span>
+            <input
+              type="radio"
+              name="passout_year"
+              id="year2025"
+              value="2025"
+              checked
+            />
+            <label for="year2025">2025</label> </span
+          >&nbsp; &nbsp;
+          <span>
+            <span>Select Stream : </span>
+            <span>
+              <label for="stream">CSE</label>
+              <input type="checkbox" />
+            </span>
+            <span>
+              <label for="stream">IT</label>
+              <input type="checkbox" />
+            </span>
+            <span>
+              <label for="stream">ECE</label>
+              <input type="checkbox" />
+            </span>
+          </span>
+        </span>
+      </div>
+      <br />
+      <div>
+        <span>
+          <label for="upload">Upload</label>
+          <input required type="file" id="upload" />
+        </span>
+        &nbsp;&nbsp;
+        <span>
+          <label for="tech">Select Technoogy</label>&nbsp;
+          <select>
+            <option value="c++" selected id="st">C++</option>
+
+            <option value="html" id="st">HTML</option>
+            <option value="css" id="st">CSS</option>
+            <option value="js" id="st">JS</option>
+          </select>
+        </span>
+      </div>
+      <br /><br />
+      <div>
+        <textarea
+          placeholder="Write About Your Project"
+          name="area"
+          id="ta"
+          rows="15"
+          cols="15"
+          maxlength="150"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <span>
+          <label for="mobile">Enter Your Number</label>
+          <input type="tel" min="10" max="12" name="moblie" id="mobile" />
+        </span>
+        &nbsp; &nbsp;&nbsp;
+        <span>
+          <label for="income">Enter Income</label>
+          <input type="number" name="income" step="1000" id="income" />
+        </span>
+      </div>
+      <br /><br />
+      <div>
+        <span>
+          <label for="ppass">Enter Your Password</label> &nbsp;
+          <input
+            type="password"
+            minlength="5"
+            placeholder="Enter You Password"
+            name="password"
+            id="ppass"
+          />
+        </span>
+        &nbsp; &nbsp;
+          <label for="pas">Confirm Your Password</label> &nbsp;
+          <input
+            type="password"
+            minlength="5"
+            placeholder="Enter You Password"
+            name="password"
+            id="pas"
+          />
+        </span>
+      </div>
+      <br>
+      <div>
+        <span>
+          <input type="submit" value="submit" id="sub">
+        </span>
+        &nbsp;
+        <span>
+          <input type="reset" value="reset">
+        </span>
+        &nbsp;
+        <span>
+          <button disabled>Edit</button>
+        </span>
+      </div>
+      <div>
+        <span>
+          <label for="city">Select City</label>
+          <input type="text" value="indore" id="city">
+        </span> &nbsp;
+        &nbsp;
+        <select name="cityy" multiple="3" id="cityyy">
+          <option value="ujjain">Ujjain</option>
+          <option value="De3was">De3was</option>
+          <option value="Bhopal">Bhopal</option>
+          <option value="Rewa">Rewa</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <span>Select Tech Stack</span> &nbsp;&nbsp;
+        <span>
+          <label for="mern">MERN</label>
+        <input type="checkbox" checked id="mern">
+        </span>
+        <span>
+          <label for="mean">MEAN</label>
+        <input type="checkbox" id="mean">
+        </span>
+        <span>
+          <label for="ds">DS</label>
+        <input type="checkbox" id="ds">
+        </span>
+      </div>
+      <br>
+      <div>
+        <label for="search">Search</label> &nbsp;
+        <input type="search" placeholder="Search Item here">
+      </div>
+    </form>
+    
+  </body>
+</html>
