@@ -1,0 +1,88 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color:rgb(191, 82, 27);
+  overflow: hidden;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 100px;
+}
+
+#fire {
+  width: 6px;
+  height: 30px;
+  background-color:grey;
+  background: radial-gradient(circle, red, orange, transparent);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 20px red;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+#agarbatti {
+  width: 6px;
+  height: 400px;
+  background-color: black;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+#stand {
+  width: 100px;
+  height: 80px;
+  background-color: gold;
+  position: absolute;
+  top: 430px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.smoke {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(210, 209, 209, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: smoke 3s ease-in-out infinite;
+  box-shadow: 0 100px 35px 25px rgba(180, 178, 178, 0.75);
+}
+
+.smoke1 {
+  animation-delay: 1s;
+  left: 48%;
+}
+
+
+
+@keyframes smoke {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-200px) scale(1.5);
+    opacity: 1;
+  }
+}

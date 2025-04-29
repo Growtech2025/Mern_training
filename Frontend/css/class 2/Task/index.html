@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .baharValaDabba {
+            height: 100vh;
+            width: 100vw;
+            background: #AE47EE;
+            background: linear-gradient(280deg, rgba(174, 71, 238, 1) 0%, rgba(97, 148, 227, 1) 64%, rgba(87, 173, 222, 1) 100%);
+        }
+
+        .andarValaDabba {
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            margin: 0 auto;
+            border-radius: 14px;
+            
+        }
+
+        #heading {
+            text-align: center;
+        }
+        .contentValaDiv{
+            width: 70%;
+           padding: 20px;
+           margin: 0 auto;
+        }
+        input{
+            border: none;
+            border-bottom: 1px solid gray;
+            width: 100%;
+        }
+        a{
+            text-decoration: none;
+            color: gray; 
+            float: right;
+            margin-top: -10px;
+        }
+        #button{
+            width: 100%;
+            padding-top:5px ;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            background: #AE47EE;
+            background: linear-gradient(280deg, rgba(174, 71, 238, 1) 0%, rgba(97, 148, 227, 1) 64%, rgba(87, 173, 222, 1) 100%);
+       border: none;
+       border-radius: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="baharValaDabba">
+        <div class="middiv" style="padding-top: 25%;">
+            <div class="andarValaDabba">
+                <div class="contentValaDiv">
+                    <div id="heading">
+                        <h1>Login</h1>
+                    </div>
+                    <div>
+                        <label for="username"><b>Username</b> </label><br>
+                        <input type="text" id="username" placeholder="Type your username ">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Pass"><b>Password</b> </label><br>
+                        <input type="text" id="Pass" placeholder="Type your Password ">
+                    </div>
+                    <br>
+                    <div>
+                        <a href="#"> Forgot password?</a>
+                    </div>
+                    <div>
+                        <button id="button">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+    </div>
+
+</body>
+
+</html>

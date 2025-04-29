@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in css</title>
+    <style>
+        #div1 {
+            position: relative;
+            width: 200px;
+            height: 100px;
+            border: 2px solid;
+            background-color: rgb(242, 196, 196);
+            left: 200px;
+            top: 10px;
+        }
+
+        body{
+            height: 2000px;
+        }
+        #parent {
+            position: relative;
+            height: 450px;
+            width: 450px;
+            background-color: rgb(253, 165, 165);
+            border: 2px solid;
+            margin: 0 auto;
+        }
+
+        #child1 {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: green;
+
+
+        }
+
+        #child2 {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            left: 350px;
+
+        }
+
+        #child3 {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            top: 78%;
+        }
+
+        #child4 {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            right: 0%;
+            bottom: 0%;
+
+        }
+
+        #child5 {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            left: 38%;
+            top: 38%;
+        }
+
+.parent_container{
+    color: white;
+    font-size: 24px;
+    position: sticky;
+    top: 0%;
+    height: 200px;
+    width: 300px;
+    background-color: aqua;
+}
+.parent_container1{
+    position: fixed;
+    color: white;
+    font-size: 24px;
+    height: 200px;
+    width: 300px;
+    background-color: rgb(247, 0, 255);
+    bottom: 0%;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <h1>This is a position class in css</h1>
+    <div>
+        <p id="div1">this is paragraph one </p>
+    </div>
+
+    <div id="parent"> this is parent
+        <div id="child1">
+            this is child1
+        </div>
+        <div id="child2">
+            this is child2
+        </div>
+        <div id="child3">
+            this is child3
+        </div>
+        <div id="child4">
+            this is child4
+        </div>
+        <div id="child5">
+            this is child5
+        </div>
+    </div>
+
+    <div class="parent_container">
+        <div class="child_container">
+            <p>this is the example of sticky</p>
+        </div>
+    </div>
+
+    <div class="parent_container1">
+        <div class="child_container1">
+            <p>this is the example of fixed</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+
+.baharValaConatiner{
+    position: relative;
+}
+.container{
+    background-color: rgb(237, 25, 25);
+    height: 150px;
+    width: 150px;
+    border: 2px solid rgb(248, 17, 17);
+    border-radius: 50%;
+    position: absolute;
+    
+    
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: containerKoGhumaDo;
+    animation-duration: 5s;
+    /* animation-delay: 5s; */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+#content{
+    text-align: center;
+    padding-top:3em ;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+@keyframes containerKoGhumaDo {
+    25%{
+       top: 100px;
+
+    }
+    50%{
+        top: 0px;
+    }
+    75%{
+        top:100px;
+
+    }
+    100%{
+        top: 0px;
+    }
+}
