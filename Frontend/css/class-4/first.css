@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 10px;
+    background:rgb(217, 227, 228);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .flex-container {
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+
+    box-shadow: 10px 10px 10px rgba(120, 119, 119, 0.5);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 180px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
