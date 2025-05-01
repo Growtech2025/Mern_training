@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 20px;
+    padding: 0;
+    color: #000;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #aaa;
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .links {
+    text-align: center;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .column:last-child {
+    border-right: none;
+  }
+  
+  .column ul {
+    padding-left: 20px;
+  }
+  
+  .column a {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .peer-reviews {
+    margin-top: 20px;
+  }
+  
+  .review {
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+  }
+  
