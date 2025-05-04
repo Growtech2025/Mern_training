@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Outcomes Section</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: white;
+      color: #000;
+    }
+
+    .section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      color: #1a1a7c;
+      font-weight: 400;
+    }
+
+    .section h2 span {
+      font-weight: 700;
+      color: #1a1a7c;
+    }
+
+    .boxes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .box {
+      position: relative;
+      width: 240px;
+      height: 320px;
+      clip-path: polygon(50% 0%, 100% 15%, 100% 100%, 0% 100%, 0% 15%);
+      background: linear-gradient(to bottom, #4a90e2, #50c3ff);
+      padding: 60px 20px 20px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-10px);
+    }
+
+    .box.yellow {
+      background: linear-gradient(to bottom, #FDD301, #F47E20);
+    }
+
+    .icon {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+
+    .box h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .box p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="section">
+    <h2>Deliver customer delight, <br><span>get measurable business outcomes</span></h2>
+
+    <div class="boxes">
+      <div class="box">
+        <div class="icon">🛒</div>
+        <h3>Increase repeat purchases</h3>
+        <p>among your most valuable customers</p>
+      </div>
+
+      <div class="box" style="background: linear-gradient(to bottom, #8e44ad, #9b59b6);">
+        <div class="icon">💵</div>
+        <h3>Grow your share of wallet</h3>
+        <p>over and above customer loyalty</p>
+      </div>
+
+      <div class="box yellow">
+        <div class="icon">⏱️</div>
+        <h3>Increase Customer Lifetime Value</h3>
+        <p>to meet long-term revenue goals</p>
+      </div>
+
+      <div class="box">
+        <div class="icon">📊</div>
+        <h3>Get Higher Return on Ad Spends</h3>
+        <p>from strategic and sustained engagement</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
