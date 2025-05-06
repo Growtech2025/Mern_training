@@ -1,0 +1,30 @@
+/* .content{
+    width: 300px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    border: white;
+    border-radius: 4%;
+    text-align: center;
+} */
+
+
+@media screen and (min-width: 480px) {
+    .content {
+        width: 300px;
+        height: 100px;
+        background-color: black;
+        color: white;
+        border: white;
+        border-radius: 4%;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .content {
+        background-color: rgb(247, 13, 177);
+        width: 100px;
+    }
+}

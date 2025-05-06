@@ -830,3 +830,10 @@ body {
     width: 90%;
   }
 }
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-family: 'Outfit', sans-serif;
+}
