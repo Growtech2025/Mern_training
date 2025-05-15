@@ -1,0 +1,635 @@
+   
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, #85051d, #22041a);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            opacity: 0.9;
+        }
+        
+        .logo img {
+            height: 25px;
+        }
+        
+        .language-select {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background-image: url('assets/ipl-2025-landing-banner-desktop-bg.webp');
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            height: 610px;
+            width: 800px;
+        }
+        
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
+        
+        .download-app {
+            background-color: white;
+            border-radius: 25px;
+            padding: 15px;
+            margin: 0 auto;
+            max-width: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .download-button {
+            background-color: #1aab2a;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        /* Partners Section */
+        .partners {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(180deg, #fff2f2 0, rgba(255, 237, 237, 0) 77.72%);
+        }
+        
+        .partners-title {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .partners-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+                 
+        }
+        
+        .partner-logo {
+            height: 115px;
+            width: 115px;
+            max-width: 100%;
+             box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+                  border-radius: 20px;
+          
+        }
+        
+        /* How to Play Section */
+     
+        
+        /* Video Section */
+        .video-section {
+            padding: 40px 20px;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        
+        .video-container {
+            max-width: 600px;
+            margin: 20px auto;
+            position: relative;
+        }
+        
+        .video-thumbnail {
+            width: 463px;
+            height: 260px;
+            border-radius: 10px;
+        }
+        
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255,255,255,0.8);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        /* Reviews Section */
+        .reviews {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .review-heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .reviews-container {
+            display: flex;
+            /* overflow-x: auto; */
+            gap: 20px;
+            padding: 10px 0;
+             margin-left: 20px;
+        }
+        
+        .review-card {
+            width: 317px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: white;
+            height: 250px;
+           
+        }
+        
+        .reviewer {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+        }
+        
+        .reviewer-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .winner-tag {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 5px 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .winner-amount {
+            color: #ffb400;
+        }
+        
+        .review-text {
+            padding: 15px;
+            text-align: left;
+            font-size: 14px;
+        }
+        
+        .app-rating {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .stars {
+            color: #ffb400;
+        }
+        
+        /* Get the App Section */
+        .get-app {
+            padding: 40px 20px;
+            background-color:white;
+            text-align: center;
+        }
+        
+        .get-app-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .app-features {
+            flex: 1;
+            min-width: 300px;
+            text-align: left;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .feature-icon {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+        
+        .app-screenshots {
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+            width: 318px;
+        }
+        
+        .app-screenshot {
+            width: 100%;
+            height: 512px;
+        }
+        
+        .download-apps {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .app-store-button {
+            height: 40px;
+            cursor: pointer;
+        }
+        
+        .qr-code {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        
+        .qr-image {
+            width: 100px;
+            height: 100px;
+        }
+        
+        /* Fantasy Sports Section */
+        .fantasy-sports {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .sports-carousel {
+            position: relative;
+            max-width: 1200px;
+            margin: 30px auto;
+            overflow: hidden;
+        }
+        
+        .sports-slide {
+            display: flex;
+            gap: 30px;
+            overflow-x: auto;
+            padding: 20px 0;
+        }
+        
+        .sport-card {
+            min-width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f8f8f8;
+            text-align: left;
+        }
+        
+        .sport-title {
+            color: #e62c38;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .sport-description {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            z-index: 1;
+        }
+        
+        .prev-button {
+            left: 10px;
+        }
+        
+        .next-button {
+            right: 10px;
+        }
+        
+        /* FAQs Section */
+        .faqs {
+            padding: 40px 20px;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 30px auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+        }
+        
+        .faq-question {
+            padding: 15px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 40px 20px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .footer-logo {
+            height: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            background-color: #333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .footer-column {
+            min-width: 200px;
+        }
+        
+        .footer-column h4 {
+            margin-bottom: 15px;
+            color: #ccc;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer-address {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            text-align: center;
+            font-size: 12px;
+           
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            
+
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer-disclaimer {
+            text-align: center;
+            font-size: 12px;
+            color: black;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+             background-color: white;
+             padding: 20px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .steps, .get-app-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .partners-logos {
+                flex-wrap: wrap;
+            }
+            
+            .review-card {
+                min-width: 250px;
+            }
+        }
+   
+
+        /* How to Play Section */
+.how-to-play {
+    padding: 40px 20px;
+    text-align: center;
+   
+}
+
+.promo-text {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      background: linear-gradient(to bottom, #f0f8ff, #ffffff);
+      padding: 10px;
+      border-radius: 5px;
+      color: #0066cc;
+      text-align: center;
+      display: inline-block;
+      margin-top: 1em;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.how-to-play {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+
+.step {
+    background-color rgba(0, 0, 0, 0)
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #0000001a;
+    width: 900px;
+    height: 100px;
+    flex: 1;
+    position: relative;
+}
+
+
+ 
+
+.step h3{
+    margin-top: 1em;
+    margin-right: 110px;
+    font-size: 1.1em;
+}
+
+.step p{
+    margin-top: 0.5em;
+    margin-right: 90px;
+    font-size: 0.6em;
+}
+
+.step-number {
+    background-color: #1aab2a;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: #000000 0px 0px 10px;
+    position: absolute;
+    top: -15px;
+    left: 5%;
+}
+
+.step-image {
+    width: 42%;
+    height: 4.5em;
+    margin: 10px 0;
+    position: absolute;
+    top: -40px;
+    left: 55%;
+    box-shadow: #1e1e1e 0px 0px 10px;
+    border-radius: 10px;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.hero-img1 {
+  position: relative;
+}
+.hero-img {
+  position: absolute;
+  display: flex;
+  gap: 12px;
+  bottom: 12px;
+  left: 30%;
+}
+.hero-img-text {
+  background: linear-gradient(to right, #e10000 0, #2b0101 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.hero-number {
+  display: flex;
+  color: black;
+  gap: 15px;
+  border: 2px solid black;
+  padding: 6px 16px;
+  border-radius: 30px;
+  align-items: center;
+  text-align: center;
+}
+.hero-number input {
+  border: none;
+  outline: none;
+}
+.hero-btn {
+  padding: 10px 40px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  background: radial-gradient(
+    circle,
+    rgba(16, 158, 56, 1) 0%,
+    rgba(9, 84, 30, 0.8870141806722689) 100%
+  );
+  color: white;
+  font-weight: 800;
+  font-size: 16px;
+  text-align: center;
+}
