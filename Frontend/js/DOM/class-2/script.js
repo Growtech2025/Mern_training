@@ -73,7 +73,21 @@ function addKaregaPko() {
     para1.textContent = "me to UI me dikhega ";
     //step-3 element ko div me append kar deaya hai
     fourValaDiv[0].appendChild(para1);
+
+    const btn = document.createElement("button")
+    btn.textContent = "remove";
+    fourValaDiv[0].appendChild(btn)
+
+    btn.addEventListener("click", () => {
+
+        fourValaDiv[0].removeChild(para1)
+        fourValaDiv[0].removeChild(btn)
+
+    })
+
 }
+
+
 
 // myBtn.addEventListener("click", addKaregaPko());
 // myBtn.addEventListener("click", () => {
@@ -83,6 +97,7 @@ function addKaregaPko() {
 //     //step-3 element ko div me append kar deaya hai
 //     fourValaDiv[0].appendChild(para1);
 // });
+
 
 
 //2nd way 
