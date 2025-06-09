@@ -78,12 +78,28 @@ function addKaregaPko() {
     btn.textContent = "remove";
     fourValaDiv[0].appendChild(btn)
 
+    const upbtn = document.createElement("button")
+    upbtn.textContent = "Update";
+    fourValaDiv[0].appendChild(upbtn)
+
+
+
+
+    upbtn.addEventListener("click", () => {
+
+        para1.textContent = "m change hogaya"
+        fourValaDiv[0].appendChild(para1)
+
+    })
+
     btn.addEventListener("click", () => {
 
         fourValaDiv[0].removeChild(para1)
         fourValaDiv[0].removeChild(btn)
+        fourValaDiv[0].removeChild(upbtn)
 
     })
+
 
 }
 
