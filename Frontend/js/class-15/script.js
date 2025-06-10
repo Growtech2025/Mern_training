@@ -1,271 +1,283 @@
-// console.log("me hu sync code ")
-// setTimeout(() => {
-//     console.log("Namaskar dosto aapke sath hai setTimeout ")
-// }, 5000)
+// // console.log("me hu sync code ")
+// // setTimeout(() => {
+// //     console.log("Namaskar dosto aapke sath hai setTimeout ")
+// // }, 5000)
 
-// console.log("second")
-// const id = setInterval(() => {
-//     console.log("Namaskar dosto aapke sath hai,setInterval")
-//     clearInterval(id)
-// }, 5000)
-// console.log(id)
+// // console.log("second")
+// // const id = setInterval(() => {
+// //     console.log("Namaskar dosto aapke sath hai,setInterval")
+// //     clearInterval(id)
+// // }, 5000)
+// // console.log(id)
 
-// debugger;
-// console.log("me hu sync code ")
-// setTimeout(() => {
-//     console.log("Namaskar dosto aapke sath hai setTimeout ")
-// })
-
-// console.log("second")
-//     // const id = setInterval(() => {
-//     //     console.log("Namaskar dosto aapke sath hai,setInterval")
-
+// // debugger;
+// // console.log("me hu sync code ")
+// // setTimeout(() => {
+// //     console.log("Namaskar dosto aapke sath hai setTimeout ")
 // // })
 
-//Error handling
-// It is used for handling the logical error
-// function devideByAnyNo(a, b) {
-//     try {
-//         if (typeof a === Number && typeof b === Number) {
-//             return a / b;
-//         }
-//         throw ("bhai saab value ke type shi nhi hai ")
-//     } catch (e) {
-//         console.log("ham to na denge ", e);
-//     } finally {
-//         console.log("me to chalkar ke rahunga kuch ho jaye ")
-//     }
-// }
-// let op = devideByAnyNo(10, "Jagmohan");
-// console.log(op);
+// // console.log("second")
+// //     // const id = setInterval(() => {
+// //     //     console.log("Namaskar dosto aapke sath hai,setInterval")
 
-//Normal Function Version
-// function addOftwo(a, b) {
-//     return a + b;
-// }
+// // // })
 
-// let o = addOftwo(2, 3);
-// console.log("sum of 2 no.", o);
+// //Error handling
+// // It is used for handling the logical error
+// // function devideByAnyNo(a, b) {
+// //     try {
+// //         if (typeof a === Number && typeof b === Number) {
+// //             return a / b;
+// //         }
+// //         throw ("bhai saab value ke type shi nhi hai ")
+// //     } catch (e) {
+// //         console.log("ham to na denge ", e);
+// //     } finally {
+// //         console.log("me to chalkar ke rahunga kuch ho jaye ")
+// //     }
+// // }
+// // let op = devideByAnyNo(10, "Jagmohan");
+// // console.log(op);
 
-//curried version
-// debugger
+// //Normal Function Version
+// // function addOftwo(a, b) {
+// //     return a + b;
+// // }
 
-// function addOftwo(a) {
-//     return function hettsd(b) {
-//         console.log(a)
-//         return a + b;
-//     };
-// }
-// // console.log(addOftwo(10))
-// // console.log(addOftwo(10)(20))
-// let fff = addOftwo(10);
-// let ggg = fff(20);
-// console.log(ggg)
+// // let o = addOftwo(2, 3);
+// // console.log("sum of 2 no.", o);
 
-//closure-> Its a combination of lexical scope and normal functionn
-// debugger
+// //curried version
+// // debugger
 
-// function outerMostFunction() {
-//     let value = 10;
+// // function addOftwo(a) {
+// //     return function hettsd(b) {
+// //         console.log(a)
+// //         return a + b;
+// //     };
+// // }
+// // // console.log(addOftwo(10))
+// // // console.log(addOftwo(10)(20))
+// // let fff = addOftwo(10);
+// // let ggg = fff(20);
+// // console.log(ggg)
 
-//     function innerFunction() {
-//         console.log(value);
-//     }
-//     innerFunction();
-// }
+// //closure-> Its a combination of lexical scope and normal functionn
+// // debugger
 
-// outerMostFunction()
+// // function outerMostFunction() {
+// //     let value = 10;
 
-// SASTA WAY
-// function uploadPictureCounting222() {
-//     let pictureCount = 0;
+// //     function innerFunction() {
+// //         console.log(value);
+// //     }
+// //     innerFunction();
+// // }
 
-//     function uploadPicture() {
-//         return pictureCount++;
-//     }
-//     console.log(uploadPicture());
-//     console.log(uploadPicture());
-//     console.log(uploadPicture());
-//     let x = uploadPicture();
-//     console.log(x);
-//     x = uploadPicture();
-//     console.log(x);
-//     x = uploadPicture();
-//     console.log(x);
-//     x = null
-//     console.log(x)
-// }
+// // outerMostFunction()
 
-// uploadPictureCounting222();
+// // SASTA WAY
+// // function uploadPictureCounting222() {
+// //     let pictureCount = 0;
 
-//BEST WAY
-// debugger;
+// //     function uploadPicture() {
+// //         return pictureCount++;
+// //     }
+// //     console.log(uploadPicture());
+// //     console.log(uploadPicture());
+// //     console.log(uploadPicture());
+// //     let x = uploadPicture();
+// //     console.log(x);
+// //     x = uploadPicture();
+// //     console.log(x);
+// //     x = uploadPicture();
+// //     console.log(x);
+// //     x = null
+// //     console.log(x)
+// // }
 
-// function uploadPictureCounting() {
-//     let pictureCount = 0;
+// // uploadPictureCounting222();
 
-//     return function uploadPicture() {
-//         return pictureCount++;
-//     };
-// }
+// //BEST WAY
+// // debugger;
 
-// let user1Upload = uploadPictureCounting();
-// console.log(user1Upload());
-// console.log(user1Upload());
-// console.log(user1Upload());
-// let user2Upload = uploadPictureCounting();
-// console.log(user2Upload());
-// console.log(user2Upload());
-// console.log(user2Upload());
-// // we are not longer use closer object so initialize by null
+// // function uploadPictureCounting() {
+// //     let pictureCount = 0;
 
-// //disadvantage->Memory leak hoti hai matalb waste hoti hai
+// //     return function uploadPicture() {
+// //         return pictureCount++;
+// //     };
+// // }
 
-// //memory leak se bacjne ke leaye ye kar do kya kar do closer object ko null initialize kar do
-// user1Upload = null;
-// user2Upload = null;
+// // let user1Upload = uploadPictureCounting();
+// // console.log(user1Upload());
+// // console.log(user1Upload());
+// // console.log(user1Upload());
+// // let user2Upload = uploadPictureCounting();
+// // console.log(user2Upload());
+// // console.log(user2Upload());
+// // console.log(user2Upload());
+// // // we are not longer use closer object so initialize by null
 
-// function uploadPictureCounting1() {
-//     let pictureCount = 0;
-//     return pictureCount++;
-// }
-// console.log(uploadPictureCounting1());
-// console.log(uploadPictureCounting1());
-// console.log(uploadPictureCounting1());
+// // //disadvantage->Memory leak hoti hai matalb waste hoti hai
 
-//This is the normal code
+// // //memory leak se bacjne ke leaye ye kar do kya kar do closer object ko null initialize kar do
+// // user1Upload = null;
+// // user2Upload = null;
 
-//XHR -> This is a way of api calling in the earlier time this is only one way by which we make api request
-//Step-1 done create the instance of the XHR
-// const xxx = new XMLHttpRequest();
+// // function uploadPictureCounting1() {
+// //     let pictureCount = 0;
+// //     return pictureCount++;
+// // }
+// // console.log(uploadPictureCounting1());
+// // console.log(uploadPictureCounting1());
+// // console.log(uploadPictureCounting1());
 
-// // Step-2 Define the response type
-// xxx.responseType = "json";
+// //This is the normal code
 
-// // use the open() method and pass 2 parameter 1st is method type and 2nd is url
-// xxx.open("GET", "https://jsonplaceholder.typicode.com/users");
-// xxx.send();
-// console.log(xxx)
+// //XHR -> This is a way of api calling in the earlier time this is only one way by which we make api request
+// //Step-1 done create the instance of the XHR
+// // const xxx = new XMLHttpRequest();
 
-// this is a modular code
-// function apiCalling(methodType, URL) {
-//     const xxx = new XMLHttpRequest();
+// // // Step-2 Define the response type
+// // xxx.responseType = "json";
 
-//     // Step-2 Define the response type
-//     xxx.responseType = "json";
+// // // use the open() method and pass 2 parameter 1st is method type and 2nd is url
+// // xxx.open("GET", "https://jsonplaceholder.typicode.com/users");
+// // xxx.send();
+// // console.log(xxx)
 
-//     // use the open() method and pass 2 parameter 1st is method type and 2nd is url
-//     xxx.open(methodType, URL);
-//     xxx.send();
-//     console.dir(xxx);
-// }
-// apiCalling("GET", "https://jsonplaceholder.typicode.com/users");
+// // this is a modular code
+// // function apiCalling(methodType, URL) {
+// //     const xxx = new XMLHttpRequest();
 
-//Callback hell -> jab aap ek callback function ke andar dusra callback function uske andar tisra callback and so on so es callback hell bolte hai
+// //     // Step-2 Define the response type
+// //     xxx.responseType = "json";
 
-// function apiCalling(methodType, URL, callback) {
-//     //step 1
-//     const xxx = new XMLHttpRequest();
+// //     // use the open() method and pass 2 parameter 1st is method type and 2nd is url
+// //     xxx.open(methodType, URL);
+// //     xxx.send();
+// //     console.dir(xxx);
+// // }
+// // apiCalling("GET", "https://jsonplaceholder.typicode.com/users");
 
-//     // Step-2 Define the response type
-//     xxx.responseType = "json";
+// //Callback hell -> jab aap ek callback function ke andar dusra callback function uske andar tisra callback and so on so es callback hell bolte hai
 
-//     // use the open() method and pass 2 parameter 1st is method type and 2nd is url
-//     xxx.open(methodType, URL);
-//     xxx.send();
-//     // xxx.addEventListener("load", () => {
-//     //     console.log(xxx.response)
-//     // });
-//     xxx.onload = () => {
-//         // console.log(xxx.response);
-//         callback(xxx.response);
-//     };
-// }
-// apiCalling("GET", "https://jsonplaceholder.typicode.com/users", (data) => {
-//     console.log("users level-1", data);
-//     // console.log(data[0])
-//     const singleUserId = data[0].id;
-//     apiCalling(
-//         "GET",
-//         `https://jsonplaceholder.typicode.com/posts/${singleUserId}`,
-//         (data) => {
-//             console.log("posts level-2", data);
-//             const singlePost = data.id;
+// // function apiCalling(methodType, URL, callback) {
+// //     //step 1
+// //     const xxx = new XMLHttpRequest();
 
-//             apiCalling(
-//                 "GET",
-//                 `https://jsonplaceholder.typicode.com/comments?postId=${singlePost}`,
-//                 (data) => {
-//                     console.log("posts single post id level-3", data);
-//                     apiCalling(
-//                         "GET",
-//                         `https://jsonplaceholder.typicode.com/comments/${singlePost}`,
-//                         (data) => {
-//                             console.log("comments level-4", data);
-//                         }
-//                     );
-//                 }
-//             );
-//         }
-//     );
-// });
+// //     // Step-2 Define the response type
+// //     xxx.responseType = "json";
 
-//promises-:its an object in js, which generally give guarantee, i can give some value or not.
+// //     // use the open() method and pass 2 parameter 1st is method type and 2nd is url
+// //     xxx.open(methodType, URL);
+// //     xxx.send();
+// //     // xxx.addEventListener("load", () => {
+// //     //     console.log(xxx.response)
+// //     // });
+// //     xxx.onload = () => {
+// //         // console.log(xxx.response);
+// //         callback(xxx.response);
+// //     };
+// // }
+// // apiCalling("GET", "https://jsonplaceholder.typicode.com/users", (data) => {
+// //     console.log("users level-1", data);
+// //     // console.log(data[0])
+// //     const singleUserId = data[0].id;
+// //     apiCalling(
+// //         "GET",
+// //         `https://jsonplaceholder.typicode.com/posts/${singleUserId}`,
+// //         (data) => {
+// //             console.log("posts level-2", data);
+// //             const singlePost = data.id;
 
-// const myPromise = new Promise((resolve, reject) => {
-//     resolve("me vapas aaunga ");
-//     reject("me vapas nhi aane vala ");
-// });
-// console.log(myPromise);
-// myPromise
-//     .then((ip) => {
-//         console.log(ip);
-//     })
-//     .catch((err) => {
-//         console.log(err);
-//     });
+// //             apiCalling(
+// //                 "GET",
+// //                 `https://jsonplaceholder.typicode.com/comments?postId=${singlePost}`,
+// //                 (data) => {
+// //                     console.log("posts single post id level-3", data);
+// //                     apiCalling(
+// //                         "GET",
+// //                         `https://jsonplaceholder.typicode.com/comments/${singlePost}`,
+// //                         (data) => {
+// //                             console.log("comments level-4", data);
+// //                         }
+// //                     );
+// //                 }
+// //             );
+// //         }
+// //     );
+// // });
 
-// Code of promise implemention
-// const myPromise = new Promise((resolve, reject) => {
-//     const anyNo = Math.floor(Math.random() * 20);
-//     // console.log(anyNo);
-//     if (anyNo >= 18) {
-//         resolve("Vote forn Prachi jajme");
-//     } else {
-//         reject("Vote for Khushi Patel");
-//     }
-// });
-// debugger
-// console.log(myPromise);
+// //promises-:its an object in js, which generally give guarantee, i can give some value or not.
 
-// myPromise.then((ip) => console.log(ip)).catch((err) => console.log("err", err));
+// // const myPromise = new Promise((resolve, reject) => {
+// //     resolve("me vapas aaunga ");
+// //     reject("me vapas nhi aane vala ");
+// // });
+// // console.log(myPromise);
+// // myPromise
+// //     .then((ip) => {
+// //         console.log(ip);
+// //     })
+// //     .catch((err) => {
+// //         console.log(err);
+// //     });
 
-// How to make promise pending  M/C=>
-// const myPromise1 = new Promise((resolve, reject) => {
-//     const anyNo = Math.floor(Math.random() * 20);
-//     console.log(anyNo);
-//     setTimeout(() => {
-//         if (anyNo >= 18) {
-//             resolve("Vote forn Prachi jajme");
-//         } else {
-//             reject("Vote for Khushi Patel");
-//         }
-//     }, 4000);
-// });
-// debugger
-// console.log(myPromise1);
+// // Code of promise implemention
+// // const myPromise = new Promise((resolve, reject) => {
+// //     const anyNo = Math.floor(Math.random() * 20);
+// //     // console.log(anyNo);
+// //     if (anyNo >= 18) {
+// //         resolve("Vote forn Prachi jajme");
+// //     } else {
+// //         reject("Vote for Khushi Patel");
+// //     }
+// // });
+// // debugger
+// // console.log(myPromise);
 
-// myPromise1.then((ip) => console.log(ip)).catch((err) => console.log(err));
+// // myPromise.then((ip) => console.log(ip)).catch((err) => console.log("err", err));
 
-//Fetch-:
-// const myprom = new Promise(resizeBy,rej)
+// // How to make promise pending  M/C=>
+// // const myPromise1 = new Promise((resolve, reject) => {
+// //     const anyNo = Math.floor(Math.random() * 20);
+// //     console.log(anyNo);
+// //     setTimeout(() => {
+// //         if (anyNo >= 18) {
+// //             resolve("Vote forn Prachi jajme");
+// //         } else {
+// //             reject("Vote for Khushi Patel");
+// //         }
+// //     }, 4000);
+// // });
+// // debugger
+// // console.log(myPromise1);
 
-// fetch("https://jsonplaceholder.typicode.com/users")
-// console.log(fetch("https://jsonplaceholder.typicode.com/users"))
+// // myPromise1.then((ip) => console.log(ip)).catch((err) => console.log(err));
 
-let result = fetch("https://jsonplaceholder.typicode.com/users");
-console.log(result);
-let arr = [];
+// //Fetch-:
+// // const myprom = new Promise(resizeBy,rej)
 
-result.then((data) => console.log(data.json().then(res => arr.push(res))));
-console.log(arr)
+// // fetch("https://jsonplaceholder.typicode.com/users")
+// // console.log(fetch("https://jsonplaceholder.typicode.com/users"))
+
+// let result = fetch("https://jsonplaceholder.typicode.com/users");
+// console.log(result);
+// let arr = [];
+
+// result.then((data) => console.log(data.json().then(res => arr.push(res))));
+// console.log(arr)
+
+
+async function Printvlaue() {
+    const res = await Printvlaue()
+    res =
+}
+
+
+let ans = Printvlaue();
+console.log(ans);
+const ans1 = ans.thrm((res) => inp.push(res));
+console.log(ans1);
