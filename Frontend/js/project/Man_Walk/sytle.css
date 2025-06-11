@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  min-height: 100vh;
+  background-color: aquamarine;
+  position: relative;
+  overflow: hidden;
+}
+.contain {
+  height: 80vh;
+  background-color: bisque;
+}
+
+.head {
+  height: 80px;
+  width: 80px;
+  background-color: red;
+  border-radius: 50%;
+}
+.main {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+}
+
+.boy {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 80px;
+  transform: translateY(-50%);
+}
+.leg1 {
+  height: 100px;
+  position: absolute;
+  bottom: -90px;
+  left: 25px;
+  border-radius: 5px;
+  width: 10px;
+  background-color: black;
+}
+.leg2 {
+  height: 100px;
+  position: absolute;
+  bottom: -90px;
+  right: 25px;
+  border-radius: 5px;
+  width: 10px;
+  background-color: black;
+}
+
+@keyframes Movex {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 60%;
+  }
+}
+
+@keyframes leftStep {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes RightStep {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#btn {
+  padding: 10px 20px;
+  width: 10%;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
