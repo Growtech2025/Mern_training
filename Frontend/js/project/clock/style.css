@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url('https://plus.unsplash.com/premium_photo-1661766077694-6e3750b0fb97?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cm9vbSUyMHdhbGx8ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  width: 250px;
+  height: 250px;
+  background: #fff;
+  border: 10px solid #333;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 30px rgba(56, 49, 49, 0.5);
+}
+
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: translateX(-50%) rotate(90deg);
+  background: #333;
+}
+
+.hour {
+  height: 60px;
+  width: 6px;
+  background: #000;
+  z-index: 3;
+}
+
+.minute {
+  height: 90px;
+  width: 4px;
+  background: #555;
+  z-index: 2;
+}
+
+.second {
+  height: 100px;
+  width: 2px;
+  background: red;
+  z-index: 1;
+}
+
+.center {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
