@@ -1,0 +1,52 @@
+
+
+
+
+//This is the example of state less code 
+function App() {
+let uName="xzy"
+function changeName(){
+
+	uName="MNO"
+}
+    return (
+	     <div>
+		<p> My nama is {uName}</p>
+		<button onClick={()=>{  chnageName()}}>Change Name</button>
+            </div>
+	)
+}
+
+
+//for making the state -> state less to state active hooks were introduced 
+// hooks -: its predefine function in react which give some feacture like make the state active .
+
+//1st Hook -:useState() hook this hook return the array of two parameteres 1st is intial state and 2nd is function which change the value of that state. 
+
+
+
+function App() {
+const[uName,setUName]=useState("xyz");
+function changeName(){
+		setUName("MNO")
+	}
+    return (
+	     <div>
+		<p> My nama is {uName}</p>
+		<button onClick={()=>{  chnageName()}}>Change Name</button>
+            </div>
+	)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

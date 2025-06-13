@@ -1,0 +1,39 @@
+
+// agar mere component me 100 state hai to mujhe 100 state variable banane honge or unko change karne ke leaye 100 function aaege jis se mera code defult ho jayega us case me aap ek object bna lo.
+import { useState } from "react";
+function App() {
+jaise neeche code me 4 state hai or unko set karne ke leaye 4 unke function hai agar 100 hote to 100 function bhi hote 
+// const [fname, setFname] = useState("Jagmohan")
+  // const [age, setAge] = useState(27)
+  // const [qualification, setQuali] = useState("M.Tech")
+  // const [city, setCity] = useState("Katni")
+  // const [state, setState] = useState("MP")
+
+return (<div>
+<div className="card">
+      <p>My name is {fname}</p>
+      <button onClick={() => {
+        setFname("Mohan")
+      }}>change Name</button>
+      <p>My city name is {city} </p>
+      <button onClick={() => {
+        setCity("Indore")
+      }}>change city</button>
+      <p>My age is {age}</p>
+      <button onClick={() => {
+        setAge(30)
+      }}>change age</button>
+      <p>My Qualification is {qualification} </p>
+      <button onClick={() => {
+        setQuali("phd")
+      }}>change Qualification</button>
+      <p>My state  is {state}</p>
+      <button onClick={() => {
+        setState("Bihar")
+      }}>change state</button> 
+    </div>
+
+
+  </div>)
+}
+export default App;
