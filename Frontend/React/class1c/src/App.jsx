@@ -10,10 +10,7 @@ return(
 <div>
   {/* <Card myName={fname}/> */}
   <Card myName={fname} myAge={age} changeAge={setAge}></Card>
-  <Card myName={fname} myAge={age} changeAge={setAge}></Card>
-  <Card myName={fname} myAge={age} changeAge={setAge}></Card>
-  <Card myName={fname} myAge={age} changeAge={setAge}></Card>
-  <Card myName={fname} myAge={age} changeAge={setAge}></Card>
+
 </div>
 )
 }
