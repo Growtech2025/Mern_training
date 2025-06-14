@@ -1,0 +1,68 @@
+
+// below is the best case to handle multiple states using an object 
+import { useState } from "react";
+function App() {
+ const [userName, setUserName] = useState("xyz");
+ 
+  //This is a good way 
+  const user = {
+    fname: "Jagmohan",
+    age: 27,
+    qualification: "M.Tech",
+    city: "Katni",
+    state: "MP"
+  }
+  //1st way create an object and pass to the useState
+  // const [userData,setUserData]=useState(user)
+
+
+  //this is the good one 
+  const [userData, setUserData] = useState({
+    fname: "Jagmohan",
+    age: 27,
+    qualification: "M.Tech",
+    city: "Katni",
+    state: "MP"
+  })
+
+ function changeUserName() {
+    setUserName("MNO")
+    console.log(userName)
+  }
+
+  console.log(userName)
+  return (<div>
+    <div className="card">
+      <p>My name is {userData.fname}</p>
+      <button onClick={() => {
+        // setUserData("syam")// you are not allowed to this 
+        // setUserData({ fname: "Mohan" })
+
+        // setUserData({ ...userData, fname: "Mohan" })// this is fine one chal jayega 
+
+
+        //this is best way
+        handleUserData("fname", "Radhe")
+      }}>change Name</button>
+      <p>My city name is {userData.city} </p>
+      <button onClick={() => {
+        handleUserData("city", "Jaipur")
+      }}>change city</button>
+      <p>My age is {userData.age}</p>
+      <button onClick={() => {
+        handleUserData("age", 26)
+      }}>change age</button>
+      <p>My Qualification is {userData.qualification} </p>
+      <button onClick={() => {
+        handleUserData("qualification", "M.phil")
+      }}>change Qualification</button>
+      <p>My state  is {userData.state}</p>
+      <button onClick={() => {
+        handleUserData("state", "USA")
+      }}>change state</button>
+    </div>
+
+
+  </div>)
+}
+export default App;
