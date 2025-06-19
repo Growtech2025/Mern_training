@@ -1,0 +1,57 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #333;
+    padding: 1rem 2rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+.nav-list-containet{
+     list-style: none;
+    display: flex;
+    /* gap: 2rem; */
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 22px;
+}
+
+.nav-list-containet li a:hover {
+    color: #ff9800;
+}
+ul li .active{
+    color: rgb(117, 187, 4);
+}
+
+.nav-list li a:hover {
+    color: #ff9800;
+}
+
+.Mycart a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 22px;
+}
+.Mycart li a .active{
+      color: rgb(117, 187, 4);
+}
