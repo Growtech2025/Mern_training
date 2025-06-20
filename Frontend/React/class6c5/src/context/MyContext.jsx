@@ -76,7 +76,7 @@ function MyContext() {
     //step -3 Provide your Context
     return (
         <div>
-            <bitesContext.Provider value={user}>
+               <bitesContext.Provider value={user}>
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />
