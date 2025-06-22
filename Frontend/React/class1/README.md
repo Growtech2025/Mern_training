@@ -105,14 +105,6 @@ function App() {
 | `npm start`     | Launches development server     |
 | `npm test`      | Runs test suite using Jest      |
 | `npm run build` | Creates a production build      |
-| `npm run eject` | Ejects config (not recommended) |
-
----
-
-## 🧪 Testing Setup
-
-* `App.test.js` is pre-configured with **React Testing Library** and **Jest**.
-* To add tests, write test cases inside `App.test.js` or create new test files.
 
 ---
 
