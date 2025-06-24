@@ -3,34 +3,45 @@ import { useState } from "react"
 function MyForm() {
     //agar mere pass multiple input feilds hai us case me, ham ek object ko useState ke andar pass kar denge 
 
-
+    const [pragRamming_Lang, setProgrammingLanguage] = useState([])
     const [myFormData, setMyFormData] = useState({
         userName: "xyz",
         age: 27,
         pass: "1234",
         date: "2025-06-24",
         email: "abc@gmail.com",
-        city: "katni"
+        city: "katni",
+        gender: "",
+
     });
 
 
     function handleChangeFormData(event) {
-        // 
         setMyFormData((initalData) => {
             return { ...initalData, [event.target.name]: event.target.value }
         })
+
     }
 
     function formData(event) {
         event.preventDefault()
         console.log("Form data me value", myFormData)
+        console.log("Prog Array=> ", pragRamming_Lang)
     }
 
-    function seleCTdATA(event) {
-        console.log(event.target.value)
 
-
+    function setCheckBoxValue(event) {
+        console.log("our targetting tag",event.target.checked)
+        if (event.target.checked) {
+           setProgrammingLanguage([...pragRamming_Lang, event.target.value])
+        }else{
+            let newskill= pragRamming_Lang.filter((item)=>{
+                return (item!==event.target.value)
+            })
+            setProgrammingLanguage(newskill);
+        }
     }
+
     return (
         <div>
             <h1>Best Form Approach</h1>
@@ -66,6 +77,46 @@ function MyForm() {
                         handleChangeFormData(event)
                     }} />
                 </div>
+
+                <div>
+                    <span>Gender: &nbsp;</span>
+                    <label htmlFor="genc">Male</label>
+                    <input type="radio" id="genc" name="gender" value="male" onChange={(event) => {
+                        handleChangeFormData(event)
+
+
+                    }} />
+                    <label htmlFor="genc1">FeMale</label>
+                    <input type="radio" id="genc1" name="gender" value="female" onChange={(event) => {
+                        handleChangeFormData(event)
+
+                    }} />
+                    <label htmlFor="genc2">Others</label>
+                    <input type="radio" id="genc2" name="gender" value="other" onChange={(event) => {
+                        handleChangeFormData(event)
+
+                    }} />
+                </div>
+
+                <div>
+                    <span>User may know PG: &nbsp;</span>
+                    <label htmlFor="prog1">C++</label>
+                    <input type="checkbox" id="prog1" name="pragRamming_Lang" value="C++" onChange={(event) => {
+                        setCheckBoxValue(event)
+
+                    }} />
+                    <label htmlFor="prog2">Java</label>
+                    <input type="checkbox" id="prog2" name="pragRamming_Lang" value="Java" onChange={(event) => {
+                        setCheckBoxValue(event)
+
+                    }} />
+                    <label htmlFor="prog3">Python</label>
+                    <input type="checkbox" id="prog3" name="pragRamming_Lang" value="Python" onChange={(event) => {
+                        setCheckBoxValue(event)
+
+                    }} />
+                </div>
+
 
                 <div>
                     <p>Select city:</p>
