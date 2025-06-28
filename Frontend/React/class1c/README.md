@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# 🌟 React Class 1c – Props and Component Interaction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project (`class1c`) is part of the **MERN Training Program** and is focused on learning **React component communication using props**, **JSX rendering**, and **basic interaction via event handling**.
 
-## Available Scripts
+It introduces how to:
 
-In the project directory, you can run:
+* Create reusable components
+* Pass data using `props`
+* Trigger state updates via callback functions
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📁 Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+Frontend/
+└── React/
+    └── class1c/
+        ├── public/
+        │   └── index.html           # HTML entry point
+        ├── src/
+        │   ├── App.js               # Parent component
+        │   ├── App.css              # Styling file
+        │   ├── Card.js              # Child component receiving props
+        │   ├── index.js             # ReactDOM render logic
+        │   └── setupTests.js        # Jest testing config (optional)
+        ├── package.json             # Metadata and dependencies
+        └── .gitignore               # Git ignored files
+```
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+1. **Install dependencies**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Run the development server**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+   The app will run on `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Build for production**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm run build
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧠 Concepts Covered
 
-## Learn More
+### 🧩 React Props & Component Composition
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* The `Card` component receives `myName`, `myAge`, and `changeAge` as props from the parent component (`App.js`).
+* Props are used to display dynamic content and to call back into parent components.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 📦 Component Example
 
-### Code Splitting
+```jsx
+function Card({ myName, myAge, changeAge }) {
+  return (
+    <div className="card">
+      <p>My name is {myName}</p>
+      <button>change Name</button>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+      <p>My city name is Indore</p>
+      <button>change city</button>
 
-### Analyzing the Bundle Size
+      <p>My age is {myAge}</p>
+      <button onClick={() => changeAge(55)}>change age</button>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+      <p>My Qualification is B.Tech</p>
+      <button>change Qualification</button>
 
-### Making a Progressive Web App
+      <p>My state is M.P.</p>
+      <button>change state</button>
+    </div>
+  );
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 🧠 Learning Outcome
 
-### Advanced Configuration
+* Understanding how data flows from parent to child via props
+* Adding `onClick` event handlers to trigger actions
+* Styling components using external CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🎨 Styling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* Basic CSS is provided in `App.css` for layout and styling.
+* You can extend or modularize it using CSS Modules or Tailwind.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🔧 Available Scripts
+
+| Script          | Description                    |
+| --------------- | ------------------------------ |
+| `npm start`     | Start development server       |
+| `npm test`      | Run tests (if available)       |
+| `npm run build` | Build optimized app            |
+| `npm run eject` | Eject CRA config (use caution) |
+
+---
+
+## ✅ Next Steps
+
+* Make each button functional with relevant state update logic in the parent component
+* Add state management using `useState`
+* Try lifting more state up to practice two-way binding
+* Break the `Card` into smaller sub-components for practice
+
+---
+
+## 📚 Resources
+
+* [React Docs – Components & Props](https://reactjs.org/docs/components-and-props.html)
+* [React Docs – Handling Events](https://reactjs.org/docs/handling-events.html)
+* [React Docs – State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+
+---
+
+**Happy Coding and Keep Building! 🛠️**
