@@ -6,6 +6,8 @@ function App(){
 
 const fname="ABCD"
 const[age,setAge]=useState(23)
+
+const [first, setfirst] = useState(second)
 return(
 <div>
   {/* <Card myName={fname}/> */}
